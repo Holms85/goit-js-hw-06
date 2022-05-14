@@ -11,3 +11,8 @@ refs.inputText.addEventListener("blur", (e) => {
   }
   refs.inputText.classList.add("valid");
 });
+
+refs.inputText.addEventListener("focus", e => {
+  refs.inputText.classList.remove("invalid");
+  refs.inputText.value = "";
+});
